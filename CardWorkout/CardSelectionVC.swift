@@ -12,12 +12,14 @@ class CardSelectionVC: UIViewController {
     // action - says do something to be done
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
+    var card:[UIImage] = []
     
     // Timer
     var timer: Timer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        timerStart()
     }
     
     func timerStart() {
@@ -25,7 +27,7 @@ class CardSelectionVC: UIViewController {
     }
     
     @objc func showNextCard() {
-        
+        cardImageView.image = card.randomElement() ?? UIImage(named: "Tiles_A_black")
     }
     
     @IBAction func stopButtonTapped(_ sender: Any) {
