@@ -19,10 +19,10 @@ class CardSelectionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timerStart()
+        startTheTimer()
     }
     
-    func timerStart() {
+    func startTheTimer() {
         timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(showNextCard), userInfo: nil, repeats: true)
     }
     
@@ -31,8 +31,11 @@ class CardSelectionVC: UIViewController {
     }
     
     @IBAction func stopButtonTapped(_ sender: Any) {
+        timer.invalidate() // stops the Timer
     }
     @IBAction func restartButtonTapped(_ sender: Any) {
+        timer.invalidate()
+        startTheTimer()
     }
     @IBAction func rulesButtonTapped(_ sender: Any) {
     }
