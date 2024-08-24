@@ -26,3 +26,9 @@ A fun and engaging way to mix up your workout routine.
 iOS 13.0+
 Xcode 12.0+
 Swift 5.0+
+
+
+## Card Art 
+This work is distributed under the CC0 license (http://creativecommons.org/publicdomain/zero/1.0) and is free to use in personal, educational and commercial projects.
+
+https://mreliptik.itch.io/playing-cards-packs-52-cards
