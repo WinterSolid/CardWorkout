@@ -6,7 +6,7 @@ The app is built using iOS 15.4, Swift 5.1 and UIKIT with StoryBoard, offering a
 
 ## Features
 
-
+Randomly shifts through a deck of cards, waiting for user to press stop .
 Each suit corresponds to a different exercise (e.g., hearts = sit-ups, spades = pushups).
 Numbered cards represent the number of reps (e.g., 7 of hearts = 7 sit-ups).
 Face cards (e.g., Jack = 11 reps).
