@@ -13,8 +13,13 @@ Face cards (e.g., Jack = 11 reps).
 A fun and engaging way to mix up your workout routine.
 
 ## Screenshots
+### <img width="355" alt="ss1" src="https://github.com/user-attachments/assets/f931c703-2746-45b4-be78-a1a24ae9d520">
+### <img width="320" alt="ss2" src="https://github.com/user-attachments/assets/49cd66c5-64fc-49a7-b22a-343a6b05a021">
+### <img width="339" alt="ss3" src="https://github.com/user-attachments/assets/0f99bdfd-c251-4bad-b516-1fce4f895c29">
+### <img width="334" alt="ss4" src="https://github.com/user-attachments/assets/f90ea2a6-a212-4f72-8644-0d77799a3360">
 
-TODO: Coming soon
+
+
 
 ## Requirements
 
