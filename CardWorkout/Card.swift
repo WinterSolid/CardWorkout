@@ -7,7 +7,7 @@
 
 import UIKit
 struct Card {
-    static var cardValue: [UIImage] = {
+    static var gameImageValues: [UIImage] = {
         // Closure Body
         var cardImages = [
             UIImage(named: "clovers_2_black"),
