@@ -11,7 +11,7 @@ import UIKit
 class CardSelectionVC: UIViewController {
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
-    var card:[UIImage] = []
+    var card:[UIImage] = Card.gameImageValues
     var timer: Timer!
     
     override func viewDidLoad() {
