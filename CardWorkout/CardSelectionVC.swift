@@ -1,20 +1,17 @@
 //
 //  CardSelectionVC.swift
 //  CardWorkout
-//
 //  Created by Zakee Tanksley on 8/22/24.
 //
+// outlets - gives access the properties of object
+// action - says do something to be done
 
 import UIKit
 
 class CardSelectionVC: UIViewController {
-    // outlets -  gives access the properties of object
-    // action - says do something to be done
     @IBOutlet var cardImageView: UIImageView!
     @IBOutlet var buttons: [UIButton]!
     var card:[UIImage] = []
-    
-    // Timer
     var timer: Timer!
     
     override func viewDidLoad() {
@@ -22,8 +19,13 @@ class CardSelectionVC: UIViewController {
         startTheTimer()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        timer.invalidate()
+    }
+    
     func startTheTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(showNextCard), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showNextCard), userInfo: nil, repeats: true)
     }
     
     @objc func showNextCard() {
@@ -33,10 +35,12 @@ class CardSelectionVC: UIViewController {
     @IBAction func stopButtonTapped(_ sender: Any) {
         timer.invalidate() // stops the Timer
     }
+    
     @IBAction func restartButtonTapped(_ sender: Any) {
         timer.invalidate()
         startTheTimer()
     }
-    @IBAction func rulesButtonTapped(_ sender: Any) {
+    
+    @IBAction func rulesButtonTapped(_ sender: UIButton) {
     }
 }

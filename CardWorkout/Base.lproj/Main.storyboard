@@ -53,8 +53,8 @@
                                             <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bia-k4-hUy"/>
-                                            <segue destination="ekw-gN-s1T" kind="presentation" id="X0l-B5-AIJ"/>
+                                            <action selector="rulesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mpC-Lh-rFq"/>
+                                            <segue destination="ekw-gN-s1T" kind="presentation" id="Yg7-V8-TZA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -99,7 +99,6 @@
                         <outlet property="cardImageView" destination="Xd9-1f-aIZ" id="2J9-JQ-RhT"/>
                         <outletCollection property="buttons" destination="XOp-0D-WuK" collectionClass="NSMutableArray" id="oTR-ct-Sxn"/>
                         <outletCollection property="buttons" destination="tPu-X9-Duq" collectionClass="NSMutableArray" id="Wht-lr-CyU"/>
-                        <outletCollection property="buttons" destination="HOk-Bp-85b" collectionClass="NSMutableArray" id="gF8-dN-Mq7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -126,7 +125,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="♠️ = Push-up  ♥️ = Sit-up  ♣️ = Burpee  ♦️= Jumping Jack" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zG-BX-OYr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="♠️ = Push-up  ♥️ = Sit-up  ♣️ = Burpee  ♦️= Jumping Jack" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zG-BX-OYr">
                                 <rect key="frame" x="95" y="309" width="192" height="175.66666666666663"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,13 +135,15 @@
                         <viewLayoutGuide key="safeArea" id="2rV-dB-XT9"/>
                         <color key="backgroundColor" systemColor="systemFillColor"/>
                         <constraints>
-                            <constraint firstItem="R6I-vu-Ogl" firstAttribute="leading" secondItem="2rV-dB-XT9" secondAttribute="leading" constant="30" id="KJy-HR-9R5"/>
-                            <constraint firstItem="fPJ-PN-HaA" firstAttribute="leading" secondItem="2rV-dB-XT9" secondAttribute="leading" constant="30" id="SWp-4j-zeg"/>
-                            <constraint firstItem="R6I-vu-Ogl" firstAttribute="top" secondItem="fPJ-PN-HaA" secondAttribute="bottom" constant="30" id="cqV-K3-dJk"/>
-                            <constraint firstItem="5zG-BX-OYr" firstAttribute="top" secondItem="R6I-vu-Ogl" secondAttribute="bottom" constant="75" id="dxJ-gd-Q9l"/>
-                            <constraint firstItem="2rV-dB-XT9" firstAttribute="trailing" secondItem="R6I-vu-Ogl" secondAttribute="trailing" constant="30" id="mzE-2l-oBo"/>
-                            <constraint firstItem="fPJ-PN-HaA" firstAttribute="top" secondItem="2rV-dB-XT9" secondAttribute="top" constant="70" id="tWn-EL-Jnu"/>
-                            <constraint firstItem="2rV-dB-XT9" firstAttribute="trailing" secondItem="fPJ-PN-HaA" secondAttribute="trailing" constant="30" id="ysy-4F-l3i"/>
+                            <constraint firstItem="R6I-vu-Ogl" firstAttribute="top" secondItem="fPJ-PN-HaA" secondAttribute="bottom" constant="30" id="4gG-aD-6z0"/>
+                            <constraint firstItem="2rV-dB-XT9" firstAttribute="trailing" secondItem="5zG-BX-OYr" secondAttribute="trailing" constant="106" id="8sO-Ko-Ews"/>
+                            <constraint firstItem="5zG-BX-OYr" firstAttribute="top" secondItem="R6I-vu-Ogl" secondAttribute="bottom" constant="75" id="Jgf-WQ-Gb0"/>
+                            <constraint firstItem="2rV-dB-XT9" firstAttribute="bottom" secondItem="5zG-BX-OYr" secondAttribute="bottom" constant="357.33333333333337" id="Kij-W0-dRB"/>
+                            <constraint firstItem="R6I-vu-Ogl" firstAttribute="leading" secondItem="2rV-dB-XT9" secondAttribute="leading" constant="30" id="MBn-Hs-Pvg"/>
+                            <constraint firstItem="R6I-vu-Ogl" firstAttribute="leading" secondItem="fPJ-PN-HaA" secondAttribute="leading" id="Vel-9u-1m3"/>
+                            <constraint firstItem="5zG-BX-OYr" firstAttribute="leading" secondItem="2rV-dB-XT9" secondAttribute="leading" constant="95" id="XUz-zS-ne8"/>
+                            <constraint firstItem="R6I-vu-Ogl" firstAttribute="centerX" secondItem="NEm-J2-Dnw" secondAttribute="centerX" id="XmZ-tm-fNu"/>
+                            <constraint firstItem="R6I-vu-Ogl" firstAttribute="trailing" secondItem="fPJ-PN-HaA" secondAttribute="trailing" id="yT1-rn-P1S"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -154,19 +155,19 @@
     <resources>
         <image name="Clovers_Jack_black" width="655" height="930"/>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
